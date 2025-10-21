@@ -17,7 +17,6 @@ public class Lab_1 {
 
         System.out.println("=== Integer Matrix Operations Program ===");
 
-        // Використовуємо змінні у повідомленні
         int matrixRowCount = getValidMatrixDimension(inputScanner, "Enter number of rows (" + MINIMUM_MATRIX_DIMENSION + "–" + MAXIMUM_MATRIX_DIMENSION + "): ");
         int matrixColumnCount = getValidMatrixDimension(inputScanner, "Enter number of columns (" + MINIMUM_MATRIX_DIMENSION + "–" + MAXIMUM_MATRIX_DIMENSION + "): ");
 
@@ -70,8 +69,8 @@ public class Lab_1 {
         return dimensionSize >= MINIMUM_MATRIX_DIMENSION && dimensionSize <= MAXIMUM_MATRIX_DIMENSION;
     }
 
-    private static void displayDimensionInputError() {
-        // Використовуємо змінні у повідомленні про помилку
+    private static void displayDimensionInputError()
+    {
         System.out.println("Error: Enter an integer between " + MINIMUM_MATRIX_DIMENSION + " and " + MAXIMUM_MATRIX_DIMENSION + ".");
     }
 
@@ -108,7 +107,6 @@ public class Lab_1 {
     }
 
     private static void displayChoiceInputError() {
-        // Використовуємо змінні у повідомленні про помилку
         System.out.println("Error: Enter number " + MANUAL_CREATION_CHOICE + " or " + RANDOM_CREATION_CHOICE + ".");
     }
 
